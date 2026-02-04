@@ -32,3 +32,20 @@ flex: 1 0 auto;
 /* footer */ 
 footer{background-color: orange;
 }
+/* Mobile-first navigation */
+header {
+    padding: 1rem;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+header a {
+    text-decoration: none;
+    color: #3a3a3a;
+    font-size: 1.2rem;
+}
