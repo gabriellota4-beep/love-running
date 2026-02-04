@@ -1,50 +1,37 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-/* Asterisk wildcard selector to override default styles added by browser */ 
+/* Asterisk wildcard selector to override default styles added by browser */
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
 /* General styles */
-body{
+body {
     min-height: 100vh;
     display: flex;
-    flex-direction: column ;
-    /* Generic project styles */
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
     color: #3a3a3a;
-     font-family: 'Lato', sans-serif;
-
-} 
-
-/* header */ 
-header{background-color: lightcoral;
 }
-header a {
-    text-decoration: none;
-    color: inherit;
+
+/* Header */
+header {
+    background-color: lightcoral;
+    padding: 1rem;
 }
+
+/* Logo / heading */
 h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
 }
-/* main */ 
-main{background-color: lightblue;
-   /* main element takes up any surplus space to push footer down */
-flex: 1 0 auto;
-margin-top: 60px;
-}
-/* footer */ 
-footer{background-color: orange;
-}
-/* Mobile-first navigation */
-header {
-    padding: 1rem;
-}
 
+/* Navigation */
 header ul {
     list-style: none;
     display: flex;
@@ -54,18 +41,17 @@ header ul {
 
 header a {
     text-decoration: none;
-    color: #3a3a3a;
+    color: inherit;
     font-size: 1.2rem;
 }
-@media (min-width: 768px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 
-    header ul {
-        flex-direction: row;
-        gap: 1.5rem;
-    }
+/* Main content */
+main {
+    background-color: lightblue;
+    flex: 1 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: orange;
 }
