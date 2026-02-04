@@ -28,6 +28,7 @@ h1{
 main{background-color: lightblue;
    /* main element takes up any surplus space to push footer down */
 flex: 1 0 auto;
+margin-top: 80px;
 }
 /* footer */ 
 footer{background-color: orange;
