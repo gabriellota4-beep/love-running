@@ -263,27 +263,29 @@ main {
 /* Large screens: Reasons section layout */
 @media screen and (min-width: 1200px) {
 
+    /* Reasons section */
     #benefits {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
     }
 
-    #benefits-physical,
-    #benefits-mental,
-    #benefits-image {
+    #benefits > div {
         flex: 1;
     }
 
-    #benefits-physical {
-        align-items: flex-end;
-        text-align: end;
+    #benefits-image {
+        order: 0;
     }
 
     #benefits-mental {
-        align-items: flex-start;
-        text-align: start;
+        order: 1;
+    }
+
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-end;
     }
 }
-
