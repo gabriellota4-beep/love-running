@@ -260,3 +260,30 @@ main {
     }
 }
 
+/* Large screens: Reasons section layout */
+@media screen and (min-width: 1200px) {
+
+    #benefits {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #benefits-physical,
+    #benefits-mental,
+    #benefits-image {
+        flex: 1;
+    }
+
+    #benefits-physical {
+        align-items: flex-end;
+        text-align: end;
+    }
+
+    #benefits-mental {
+        align-items: flex-start;
+        text-align: start;
+    }
+}
+
