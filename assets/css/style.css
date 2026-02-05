@@ -217,3 +217,10 @@ main {
 #benefits p {
     padding: 0 20px;
 }
+
+#circle-cover-bg {
+    width: 90vw;
+    height: 90vw;
+    margin: 20px auto;
+    background: url("../images/reasons-image.webp") no-repeat center center / cover;
+}
