@@ -169,6 +169,15 @@ main {
     padding: 5%;
     color: #3a3a3a;
 }
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -213,6 +222,10 @@ main {
     main{
         margin-top: 75px;
     }
+    /* Galllery */
+    #photos {
+        column-count: 3;
+    }
 }
 
 /* Media query: laptops and larger (992px and up) */
@@ -220,6 +233,11 @@ main {
 
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* Galllery */
+    #photos {
+        column-count: 4;
     }
 }
 
